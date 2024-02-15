@@ -35,5 +35,5 @@ steps:
     azureSubscription: 'Azure subscription 1(00cbd680-dc87-4963-a153-7ac6c178921c)'
     appType: 'webAppLinux'
     WebAppName: 'my-tutorial-app'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.jar'
+    packageForLinux: '$(Build.ArtifactStagingDirectory)/**/*.jar'
     RuntimeStack: 'JAVA|17-java17'
